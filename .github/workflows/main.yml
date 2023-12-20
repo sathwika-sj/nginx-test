@@ -1,0 +1,14 @@
+name: nginx-test
+
+on:
+  push:
+    branches: [ nginx-test ]
+  pull_request:
+    branches: [ docker hub]
+
+jobs:
+
+  build:
+	nginx docker
+
+    runs-on: docker build 
